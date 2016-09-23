@@ -8,7 +8,7 @@ public class Terrain {
 	
 	public void creerPiece()
 	{
-
+		
 	}
 	
 	public void enleverLigne()
