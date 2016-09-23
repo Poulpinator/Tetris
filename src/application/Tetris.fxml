@@ -3,12 +3,11 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<fx:root prefHeight="600.0" prefWidth="300.0" type="AnchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65">
+<fx:root prefHeight="600.0" prefWidth="300.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button mnemonicParsing="false" prefHeight="525.0" prefWidth="87.0" text="Button" />
-      <Button layoutX="213.0" mnemonicParsing="false" prefHeight="525.0" prefWidth="87.0" text="Button" />
-      <Button layoutY="524.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="300.0" text="Button" />
-      <Button layoutX="86.0" mnemonicParsing="false" prefHeight="525.0" prefWidth="128.0" text="Button" />
+      <Button id="btnLeft" mnemonicParsing="false" prefHeight="525.0" prefWidth="87.0" text="btnLeft" />
+      <Button id="btnRight" layoutX="213.0" mnemonicParsing="false" opacity="0.0" prefHeight="525.0" prefWidth="87.0" text="btnRight" />
+      <Button id="btnBottom" layoutY="524.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="300.0" text="btnBottom" />
+      <Button id="btnMiddle" layoutX="86.0" mnemonicParsing="false" opacity="0.0" prefHeight="525.0" prefWidth="128.0" text="btnMiddle" />
    </children>
 </fx:root>
