@@ -5,9 +5,9 @@
 
 <fx:root prefHeight="600.0" prefWidth="300.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button id="btnLeft" mnemonicParsing="false" prefHeight="525.0" prefWidth="87.0" text="btnLeft" />
-      <Button id="btnRight" layoutX="213.0" mnemonicParsing="false" opacity="0.0" prefHeight="525.0" prefWidth="87.0" text="btnRight" />
-      <Button id="btnBottom" layoutY="524.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="300.0" text="btnBottom" />
-      <Button id="btnMiddle" layoutX="86.0" mnemonicParsing="false" opacity="0.0" prefHeight="525.0" prefWidth="128.0" text="btnMiddle" />
+      <Button fx:id="btnLeft" mnemonicParsing="false" onAction="#pressLeft" opacity="0.31" prefHeight="525.0" prefWidth="87.0" text="btnLeft" />
+      <Button fx:id="btnRight" layoutX="213.0" mnemonicParsing="false" onAction="#pressRight" opacity="0.34" prefHeight="525.0" prefWidth="87.0" text="btnRight" />
+      <Button fx:id="btnBot" layoutY="524.0" mnemonicParsing="false" onAction="#pressBot" opacity="0.47" prefHeight="75.0" prefWidth="300.0" text="btnBottom" />
+      <Button fx:id="btnMid" layoutX="86.0" mnemonicParsing="false" onAction="#pressMid" opacity="0.31" prefHeight="525.0" prefWidth="128.0" text="btnMiddle" />
    </children>
 </fx:root>
