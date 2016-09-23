@@ -22,5 +22,28 @@ public class Main extends Application {
 	
 	public static void main(String[] args) {
 		launch(args);
+		
+	}
+	
+	public static void finJeu()
+	{
+		
+		
+	}
+	public static void lancerJeu()
+	{
+		
+	}
+	public static void tick()
+	{
+		
+	}
+	public static void update()
+	{
+		
+	}
+	public static void draw()
+	{
+		
 	}
 }
