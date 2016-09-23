@@ -20,15 +20,7 @@ public class Main extends Application {
 			primaryStage.setScene(scene);
 			primaryStage.show();
 			
-			Rectangle bloc = new Rectangle();
-			bloc.setX(100);
-			bloc.setY(100);
-			bloc.setWidth(20);
-			bloc.setHeight(20);
-			bloc.setFill(Color.GREEN);
-			bloc.setStroke(Color.BLACK);
-			bloc.setStrokeWidth(1.5);
-			root.getChildren().add(bloc);
+		
 			
 		} catch (Exception e) {
 			e.printStackTrace();
