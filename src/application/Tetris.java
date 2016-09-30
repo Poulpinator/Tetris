@@ -3,7 +3,6 @@ package application;
 import java.io.IOException;
 
 import javax.swing.Timer;
-import java.util.TimerTask;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -14,9 +13,10 @@ import javafx.scene.layout.AnchorPane;
 public class Tetris extends AnchorPane {
 	@FXML
 	private Button btnLeft;
-	int iCpt=0;
+	private Terrain terrain;
+	private int iCpt = 0;
 	private Timer timerJoueur;
-	Terrain test=new Terrain();
+	private Piece piece = new Piece();
 
 	public Tetris() {
 		super();
@@ -26,32 +26,33 @@ public class Tetris extends AnchorPane {
 			loader.setController(this);
 			loader.load();
 
-			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
 
 	}
 
 	@FXML
+	public void initialize() {
+		terrain = new Terrain();
+		getChildren().add(terrain);
+	}
+
+	@FXML
 	public void pressLeft(ActionEvent event) {
-		System.out.println("CLICKG");
+		terrain.getPiece().deplacementGauche();
 	}
 
 	public void pressMid(ActionEvent event) {
-		System.out.println(iCpt);
-		iCpt++;
-		test.creerPiece(iCpt);
+		terrain.getPiece().rotationPiece();
 	}
 
 	public void pressRight(ActionEvent event) {
-		System.out.println("CLICKD");
-		
+		terrain.getPiece().deplacementDroite();
 	}
 
 	public void pressBot(ActionEvent event) {
-		System.out.println("CLICKB");
+		terrain.getPiece().deplacementBas();
 	}
 
 	public void finJeu() {
@@ -62,31 +63,16 @@ public class Tetris extends AnchorPane {
 
 	}
 
-	
-	
-	
 	public void tick() {
 
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	public void update() {
 
 	}
 
 	public void draw() {
-		
-		
+
 	}
 
 }

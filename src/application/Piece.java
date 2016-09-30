@@ -1,27 +1,35 @@
 package application;
 
-public class Piece {
-	
-	private TypePiece sens;
-	private double dblPositionPX;
-	private double dblPositionPY;
-	
-	
-	public void deplacementBas()
-	{
-		
+import javafx.scene.layout.Pane;
+
+public class Piece extends Pane {
+
+	private TypePiece type;
+
+	Bloc bloc = new Bloc();
+
+	public Piece() {
+		getChildren().add(bloc);
+		type = TypePiece.creer();
 	}
-	public void deplacementGauche()
-	{
-		
+
+	public void deplacementBas() {
+		setLayoutY(getLayoutY() + 10);
+
 	}
-	public void deplacementDroite()
-	{
-		
+
+	public void deplacementGauche() {
+		setLayoutX(getLayoutX() - 10);
+
 	}
-	public void rotationPiece()
-	{
-		
+
+	public void deplacementDroite() {
+		setLayoutX(getLayoutX() + 10);
+
+	}
+
+	public void rotationPiece() {
+
 	}
 
 }
